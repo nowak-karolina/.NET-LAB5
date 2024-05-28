@@ -25,6 +25,15 @@ public class Problem {
         }
     }
 
+    public void ForceItems(int value, int weight, int id){
+
+        items.add(new Item(value, weight, id));
+    }
+
+    public void clear(){
+        items.clear();
+    }
+
     public  String ToString() {
         StringBuilder sb = new StringBuilder();
         for(Item item : items) {
